@@ -32,6 +32,10 @@ a{
 .nav-menu a{
     transition: all .5s ease-in-out;
     animation: giro 2.5s running infinite ;
+    border-radius: 25px;
+    padding: 2px 10px;
+    border-right: 1px solid #40866c;
+    border-left: 1px solid #40866c;
 }
 .nav-menu a:hover{
     color: #734d32;
