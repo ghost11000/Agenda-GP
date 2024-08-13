@@ -1,0 +1,139 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+body{
+    background-color: #000;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 98%;
+    margin: auto;
+    height: 100vh;
+}
+.nav-menu{
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Lexend", sans-serif;
+}
+.nav-menu ul{
+    margin-right: 4rem;
+}
+.nav-menu ul a {
+    color: #40866c;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+
+.nav-menu ul a:hover{
+    color: #734d32;
+}
+/* MAIN */
+.main-content{
+    width: 100%;
+    height: 95%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.main-all{
+    display: flex;
+}
+.main-all div{
+    flex: 1;
+    font-family: "Rajdhani", sans-serif;
+}
+.panel {
+    border: 1px solid #2f5647;
+    padding: 5px 5px;
+}
+.fecha-img{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-img{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-3{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-3  h3{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fecha-img img{
+    width: 100%;
+    height: 70%;
+    border-radius: 30px;
+}
+.btn-mirar{
+    color: #000;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    transition: all .5s ease-in-out;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    animation: track .8s ease-in-out infinite  alternate;
+}
+@keyframes track{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+        transform: rotate(10deg);
+    }
+}
+.btn-mirar:hover{
+    background-color: #734d32;
+    color: #fff;
+}
+.info{
+    height: 50%;
+    position: relative;
+}
+.container-horarios div{
+    margin: .2rem 0;
+}
+
+
+
+/* MEDIA RESPONSIVE */
+@media (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .main-all{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-menu h1{
+        font-size: 1rem;
+    }
+    .nav-menu ul{
+        margin-right: 0;
+    }
+}
+
